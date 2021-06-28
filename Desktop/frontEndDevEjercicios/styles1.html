@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tipos de selectores, pseudo-clases y pseudo-elementos</title>
+</head>
+<style>
+  
+    p:first-child{
+        color: pink;
+    }
+
+    p:last-child{
+        color: salmon;
+    }
+
+    p:nth-child(2n){
+        color: red;
+    }  /*nth hace alución a los números ordinarios en ingles */
+
+    p:nth-child(2n+1){
+        color:blue
+    }
+</style>
+
+<body>
+
+    <p>🦁 Leon</p>
+    <p>🐯 tiger</p>
+    <p>🦝 Mapache</p>
+    <p>🐵 Monkey</p>
+    
+</body>
+
+</html>
