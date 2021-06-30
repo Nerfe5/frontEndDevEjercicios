@@ -56,7 +56,7 @@
 .carousel-item__details{
     background: linear-gradient(to top, rgba(0, 0, 0, 0.9) 0%, rgb(0, 0, 0,0) 100%);
     font-size: 10px;
-    opacity: 1;
+    opacity: 0;
     transition: 450ms opacity;
     padding: 10px;
     position: absolute;
@@ -64,7 +64,40 @@
     left:0;
     right: 0;
     bottom:0;
+    display: block;
+
 }
+
+.carousel-item__details:hover{
+    opacity: 1;
+}
+
+.carousel-item__details img{
+    width:15px;
+    height:15px;
+    padding:0;
+}
+
+.carousel-item__details--title{
+    margin-top: 180px;
+    color:white;
+    opacity: 1;
+    font-size: 10px;
+    display:flex;
+    align-items: center;
+
+}
+
+.carousel-item__details--subtitle{
+    margin-top: -12px;
+    color:white;
+    opacity: 1;
+    font-size: 10px;
+    display:flex;
+    align-items: center;
+}
+
+
 </style>
 
 <body>
@@ -72,16 +105,27 @@
         <div class="carousel__container">
             <div class="carousel-item">
                 <img class="carousel-item__img" src="./images/pexels__4.jpg" alt="">
-                <div class="carousel-item__details">
-                    <div>
-                    <img src="./icons/icon_play.png" alt="Play">
+                <div div class="carousel-item__details">
+                <div class="carousel-item__details--title">
+                    <img src="./icons/icon_play.png" alt="Play"> 
+                    <p>Title </p>
+                    <p>Description Title </p>
+                    
+                </div>
+                <div class="carousel-item__details--subtitle">
                     <img src="./icons/icon_plus.png" alt="Plus">
+                        <p >  2021 16+ 114 </p>
+                    </div>
+                    
+
                 </div>
-                </div>
-                <p class="carousel-item__details--title" >Título descriptivo</p>
-                <p class="carousel-item__details--subtitle">2021 16+ 114</p>
             </div>
+
+
+
             <div class="carousel-item">
+
+
             </div>
         </div>
 
